@@ -26,3 +26,9 @@ test_dataset <- training_data[29:32,]
 #Creating reression model on mpg and wt of car
 regression_model <- lm(mpg ~ wt, data=training_dataset)
 
+# Predict the relationship between mpg and weight of the car on test dataset using our generated regression model.
+prediction_result <- predict(regression_model, test_dataset)
+
+# Results of prediction
+actuals
+
