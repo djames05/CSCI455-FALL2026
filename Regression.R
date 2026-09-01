@@ -30,5 +30,5 @@ regression_model <- lm(mpg ~ wt, data=training_dataset)
 prediction_result <- predict(regression_model, test_dataset)
 
 # Results of prediction
-actuals
+actuals_prediction_values
 
