@@ -7,7 +7,7 @@ library(caret)
 dataset <- iris
 
 # Split the dataset into training (60%) and testing (40%) groups
-set.seed(7)  # added so the split is reproducible
+set.seed(7)
 validation_index <- createDataPartition(dataset$Species, p = 0.60, list = FALSE)
 
 validation <- dataset[-validation_index, ]
